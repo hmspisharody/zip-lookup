@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  redis-server:
+    container_name: redis-zip-lookup
+    hostname: redis
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+  zip-lookup:
+    container_name: zip-lookup
+    image: harikrishnanms/zip-lookup:1.0
+    ports:
+      - "80:8090"

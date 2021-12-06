@@ -1,0 +1,12 @@
+zip:
+  zippopotamus:
+    host: http://api.zippopotam.us
+    path: /US/
+springfox:
+  documentation:
+    auto-startup: false
+server:
+  port: 8090
+  error:
+    whitelabel:
+      enabled: false
